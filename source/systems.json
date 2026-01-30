@@ -1,0 +1,92 @@
+[
+  {
+    "id": "dionysus_nhp",
+    "name": "Dionysus-Class NHP",
+    "source": "GMS",
+    "license": "ERR: DATA NOT FOUND",
+    "license_id": "missing_frame",
+    "license_level": 0,
+    "effect": "<div>Your mech gains +1 Accuracy to all attack rolls and saves. Additionally, your mech gains +1 Accuracy on attack rolls for each ally that made an attack against that enemy earlier in the round. </div>",
+    "type": "AI",
+    "sp": "2",
+    "description": "<div>The core personality of the original NHP Dionysus, designed to aid users with tactical projections. While equipped, in addition to the usual benefits of an NHP that can be activated as a protocol to take control, you gain +1 Accuracy to all attack rolls and saves. Additionally, you gain +1 Accuracy on attack rolls for each ally that made an attack against that enemy earlier in the round. While in control Dionysus will primarily act defensively but opportunistically to aid allies and take down enemies when it estimates the ability to do so.</div>",
+    "tags": [
+      {
+        "id": "tg_ai",
+        "name": "AI",
+        "description": "A mech can only have one system with this tag installed at a time. Some AI systems grant the AI tag to the mech. A mech with the AI tag has an NHP or COMP/CON unit installed that can act somewhat autonomously. A pilot can choose to hand over the controls to their AI or take control back as a protocol. Their mech gains its own set of actions and reactions when controlled by an AI, but the pilot can’t take actions or reactions with it until the start of their next turn. AIs can’t benefit from talents, and have a small chance of cascading when they take structure damage or stress damage.",
+        "val": 0
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ]
+  },
+  {
+    "id": "dionysus_splinter",
+    "name": "Dionysus Splinter",
+    "source": "GMS",
+    "license": "ERR: DATA NOT FOUND",
+    "license_id": "missing_frame",
+    "license_level": 0,
+    "effect": "<div>You gain +1 Accuracy on attack rolls for each ally that made an attack against that enemy earlier in the round.</div>",
+    "type": "System",
+    "sp": "1",
+    "description": "<div>A fragment of the original Dionysus, while not as powerful as the original it can still render significant assistance, acting as a standard comp/con unit in addition to being able to follow more detailed orders. Additionally, you gain +1 Accuracy on attack rolls for each ally that made an attack against that enemy earlier in the round.</div>",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ]
+  },
+  {
+    "id": "megiddo_drone",
+    "name": "Megiddo Drone",
+    "source": "GMS",
+    "license": "ERR: DATA NOT FOUND",
+    "license_id": "missing_frame",
+    "license_level": 0,
+    "effect": "<div>The kill you drone</div>",
+    "type": "Drone",
+    "sp": "1",
+    "description": "<div>Size 1/2, HP 5, Evasion 10, E-Defense 10</div><div>Gain the “Railgun Assault” and “Flechette Defense” Reactions</div>",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Megiddo Drone",
+        "type": "Drone",
+        "size": 0.5,
+        "hp": "5",
+        "edef": "10",
+        "evasion": "10",
+        "detail": "Holy fuck, this is a drone",
+	"actions": [
+		{
+			"name": "Railgun Assault",
+			"activation": "Reaction",
+			"frequency": "1/turn",
+			"trigger": "A hostile character moves into a space within Range 5 of the Megiddo Drone",
+			"detail": "You can make a ranged attack against them with the drone, gaining your Grit as a bonus to its roll, and dealing 1d6 AP Kinetic Damage."
+		},
+		{
+			"name": "Flechette Defense",
+			"activation": "Reaction",
+			"frequency": "1/turn",
+			"trigger": "A hostile character moves into a space adjacent to the Megiddo Drone",
+			"detail": "You can make a ranged attack against all characters adjacent to the drone, gaining your Grit as a bonus to its roll, and dealing 2d6 AP Kinetic Damage."
+		}
+	]
+      }
+    ]
+  }
+]
